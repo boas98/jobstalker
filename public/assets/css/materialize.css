@@ -6011,7 +6011,7 @@ button.btn-floating {
   .waves-effect.waves-teal .waves-ripple {
     background-color: rgba(0, 150, 136, 0.7); }
   .waves-effect.waves-blue .waves-ripple {
-    background-color: rgba(25, 118, 210, 0.7); }
+    background-color: rgba(33, 150, 243, 0.7); }
 
 .waves-notransition {
   -webkit-transition: none !important;
@@ -7053,12 +7053,14 @@ select {
     .side-nav li:hover, .side-nav li.active {
       background-color: #ddd; }
   .side-nav a {
+    text-transform: none;
     color: #444;
+    font-weight: 500;
     display: block;
-    font-size: 1rem;
-    height: 55px;
-    line-height: 55px;
-    padding: 0 15px; }
+    font-size: 1.05rem;
+    height: 52.1px;
+    line-height: 52.1px;
+    padding: 0 16px; }
 
 .drag-target {
   height: 100%;

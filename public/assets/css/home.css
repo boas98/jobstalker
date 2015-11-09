@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 .login-page{
-  margin: 80px auto 0;
+  margin: 20px auto 0;
   width: 29%;
 }
 .signup-page{
@@ -36,4 +36,7 @@
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+.drag-target{
+  width: 0!important;
 }

@@ -27,7 +27,7 @@
         <div class="container">
           <div class="row">
           <h2 class="shades-text text-white header col s12 m7" style="font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; font-weight:500">Expert freelancers for your online job.</h2>
-            <h5 class="shades-text text-white header light col s12 m7" style="line-height:1.5em">Millions of small businesses use Freelancer.com to turn their ideas into reality. Need to get work done? Click 'Hire' to get started!</h5>
+            <h5 class="shades-text text-white header light col s12 m7" style="line-height:1.5em">Millions of small businesses use Jobstalker to turn their ideas into reality. Need to get work done? Click 'Hire' to get started!</h5>
             <div class="col s12 m7" style="margin-top:20px">
               <a href="{{ url('signup') }}" id="download-button" class="btn-large waves-effect waves-light blue darken-2">Hire</a>
             </div>

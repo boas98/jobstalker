@@ -2,11 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Log In - Jobstalker</title>
+<title>Log in - Jobstalker</title>
 @include('main.lib')
 </head>
 <body class="grey lighten-5">
 <div class="login-page">
+<div class="center" style="margin-bottom:20px">
+<a href="{{ url() }}" class="blue-text text-darken-2" style="font-weight:500; font-size:1.7rem">Jobstalker</a>
+</div>
 <div class="card-panel" style="padding-bottom:5px">
 <div class="pict-img blue darken-2">
 <i class="material-icons md-96 white-text">&#xE853;</i>
@@ -35,6 +38,9 @@
 </div>
 </form>
 </div>
+</div>
+<div class="center">
+<a href="{{ url('signup') }}" class="blue-text text-darken-2 title">Create an account</a>
 </div>
 </div>
 </body>

@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/','MainController@home');
+// Here is a main route
+
+Route::get('/','Auth\AuthController@home');
 Route::get('login','Auth\AuthController@getLogin');
 Route::get('signup','Auth\AuthController@getSignUp');
+
+
+// Here is an user route
+
+Route::get('dashboard','UserController@dashboard');
