@@ -1,0 +1,18 @@
+.dashcon {
+  width: 92%;
+  margin: auto;
+}
+.recomcon {
+  width: 92%;
+  margin: 30px auto;
+}
+.pict-auth {
+    border-radius: 50%;
+    margin-bottom: 3px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}

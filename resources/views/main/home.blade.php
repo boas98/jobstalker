@@ -48,7 +48,7 @@
         <div class="col s12 m3">
           <div class="card">
             <a href="#">
-            <div class="card-image">
+            <div class="card-image waves-effect waves-block waves-light">
               <img src="{{ url('assets/img/sample-1.jpg') }}">
               <span class="card-title">Card Title</a>
             </div>

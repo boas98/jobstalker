@@ -6,7 +6,7 @@
 @include('main.lib')
 </head>
 <body class="grey lighten-5">
-      <nav class="white">
+      <nav class="white z-depth-0">
         <div class="nav-wrapper container">
           <a href="{{ url() }}" class="brand-logo blue-text text-darken-2">Jobstalker</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse blue-text text-darken-2"><i class="material-icons">menu</i></a>
