@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
- <title>Jobstalker</title>
+<title>Jobstalker</title>
 @include('main.lib')
 </head>
 <body>
