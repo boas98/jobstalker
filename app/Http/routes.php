@@ -21,3 +21,4 @@ Route::get('signup','Auth\AuthController@getSignUp');
 // Here is an user route
 
 Route::get('dashboard','UserController@dashboard');
+Route::get('post/project','UserController@getPostProject');

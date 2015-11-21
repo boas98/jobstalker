@@ -40,20 +40,81 @@
     </div>
     <div class="grey lighten-4">
     <div class="conjob">
-        <h4 class="center">Hire Freelancers and Find Freelance Jobs Online</h4>
+        <h4 class="center" style="margin-bottom:20px">Hire Freelancers and Find Freelance Jobs Online</h4>
       <div class="section">
 
         <!--   Icon Section   -->
         <div class="row">
+          <div class="col s12 m6">
+            <div class="card" style="height:295px">
+              <a href="#">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="{{ url('assets/img/sample-1.jpg') }}">
+                <span class="card-title" style="bottom:40%; font-size:30px">Card Title</span>
+                <span class="card-title" style="bottom:31.5%; font-size:20px">Starting from $90</span>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card" style="height:295px">
+              <a href="#">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="{{ url('assets/img/sample-1.jpg') }}">
+                <span class="card-title" style="bottom:40%; font-size:30px">Card Title</span>
+                <span class="card-title" style="bottom:31.5%; font-size:20px">Starting from $90</span>
+              </div>
+              </a>
+            </div>
+          </div>
         <div class="col s12 m3">
           <div class="card">
             <a href="#">
             <div class="card-image waves-effect waves-block waves-light">
               <img src="{{ url('assets/img/sample-1.jpg') }}">
-              <span class="card-title">Card Title</a>
+              <span class="card-title">Card Title</span>
             </div>
             </a>
-            <div class="card-content">
+            <div class="card-content center-align">
+              <p>Starting from $90</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <a href="#">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img src="{{ url('assets/img/sample-1.jpg') }}">
+              <span class="card-title">Card Title</span>
+            </div>
+            </a>
+            <div class="card-content center-align">
+              <p>Starting from $90</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <a href="#">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img src="{{ url('assets/img/sample-1.jpg') }}">
+              <span class="card-title">Card Title</span>
+            </div>
+            </a>
+            <div class="card-content center-align">
+              <p>Starting from $90</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <a href="#">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img src="{{ url('assets/img/sample-1.jpg') }}">
+              <span class="card-title">Card Title</span>
+            </div>
+            </a>
+            <div class="card-content center-align">
               <p>Starting from $90</p>
             </div>
           </div>
@@ -75,55 +136,6 @@
         </div>
       </div>
     </div>
-    <div class="constats">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h4 class="center">19.000</h4>
-            <p class="light center" style="text-transform:uppercase">Users online</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h4 class="center">19.000</h4>
-            <p class="light center" style="text-transform:uppercase">Registered users</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h4 class="center">19.000</h4>
-            <p class="light center" style="text-transform:uppercase">Projects</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <footer class="page-footer grey lighten-5">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m10">
-            <a href="https://www.facebook.com/revze" target="_blank" style="margin-right:20px">Revando</a>
-            <a href="https://www.facebook.com/boas.christian" target="_blank" style="margin-right:20px">Boas Aditya</a>
-            <a href="https://www.facebook.com/muhamad.alrifki" target="_blank" style="margin-right:20px">Muhammad Al</a>
-            <a href="https://www.facebook.com/widya.ari.547" target="_blank" style="margin-right:20px">Ari Widya</a>
-            <a href="https://www.facebook.com/doni.setiawan.9674" target="_blank" style="margin-right:20px">Doni Setiawan</a>
-        </div>
-        <div class="col s12 m2">
-            <a href="#"><i class="material-icons left">&#xE5CE;</i>Back to Top</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright grey lighten-5">
-      <div class="container">
-        <span class="grey-text">Copyright &copy; 2015 <a href="{{ url() }}">Jobstalker</a></span>
-      </div>
-    </div>
-  </footer>
+    @include('user.footer')
 </body>
 </html>

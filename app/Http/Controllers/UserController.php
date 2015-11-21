@@ -13,4 +13,9 @@ class UserController extends Controller
     {
         return view('user.dashboard');
     }
+
+    public function getPostProject()
+    {
+        return view('user.postproject');
+    }
 }
