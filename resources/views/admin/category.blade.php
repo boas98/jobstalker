@@ -30,9 +30,19 @@
 <div class="container">
 <div class="row">
   <div id="addcat" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" style="margin-bottom:0">
       <h4>Add Category</h4>
-      <p>A bunch of text</p>
+      <div class="row" style="margin-bottom:0">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">First Name</label>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <div class="modal-footer">
       <button class="waves-effect waves-blue btn-flat">Save</button>

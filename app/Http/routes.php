@@ -11,22 +11,26 @@
 |
 */
 
+Route::get('/','MainController@home');
+
+
 // Here is a main route
 
-Route::get('/','Auth\AuthController@home');
 Route::get('login','Auth\AuthController@getLogin');
+Route::post('login','Auth\AuthController@postLogin');
 Route::get('signup','Auth\AuthController@getSignUp');
+Route::post('signup','Auth\AuthController@postSignUp');
+Route::get('logout','Auth\AuthController@getLogout');
 
 
 // Here is an user route
 
-Route::get('dashboard','UserController@dashboard');
+Route::get('post/project','UserController@getPostProject');
 Route::get('post/project','UserController@getPostProject');
 
 
 // Here is an admin route
 
-Route::get('admin-category','AdminController@category');
-Route::post('admin-category','AdminController@postCategory');
-Route::get('admin-user','AdminController@user');
+Route::get('admin/category','AdminController@category');
+Route::get('admin/user','AdminController@user');
 Route::get('admin','AdminController@admin');

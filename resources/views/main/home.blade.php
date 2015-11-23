@@ -11,6 +11,8 @@
         <div class="nav-wrapper container">
           <a href="{{ url() }}" class="brand-logo">Jobstalker</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          @if(Auth::user()->role=='0')
+          @else
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ url('login') }}" class="waves-effect waves-light">Log in</a></li>
             <li><a href="{{ url('signup') }}" class="waves-effect waves-light">Sign up</a></li>
@@ -19,6 +21,7 @@
             <li><a href="{{ url('login') }}" class="waves-effect waves-blue">Log in</a></li>
             <li><a href="{{ url('signup') }}" class="waves-effect waves-blue">Sign up</a></li>
           </ul>
+          @endif
         </div>
       </nav>
     </div>

@@ -4,6 +4,18 @@
 <meta charset="utf-8">
 <title>Create your Jobstalker account</title>
 @include('main.lib')
+<style type="text/css">
+.toast{
+  background: #F44336;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+    @foreach($errors->all() as $error)
+    Materialize.toast('{{ $error }}', 100000);
+    @endforeach
+});
+</script>
 </head>
 <body class="grey lighten-5">
       <nav class="white z-depth-0">
@@ -30,27 +42,27 @@
 <div class="row">
 <div class="input-field col s12">
 <i class="material-icons prefix">&#xE87C;</i>
-<input id="name" type="text" name="name" class="validate">
+<input id="name" type="text" name="name" class="validate" value="{{ old('name') }}" required>
 <label for="name">Name</label>
 </div>
 <div class="input-field col s12">
 <i class="material-icons prefix">&#xE0BE;</i>
-<input id="email" type="email" name="email" class="validate">
+<input id="email" type="email" name="email" class="validate" value="{{ old('email') }}" required>
 <label for="email">Email</label>
 </div>
 <div class="input-field col s12">
 <i class="material-icons prefix">&#xE86C;</i>
-<input id="username" type="text" name="username" class="validate">
+<input id="username" type="text" name="username" class="validate" value="{{ old('username') }}" required>
 <label for="username">Username</label>
 </div>
 <div class="input-field col s12">
 <i class="material-icons prefix">&#xE897;</i>
-<input id="password" type="password" name="password" class="validate">
+<input id="password" type="password" name="password" class="validate" value="{{ old('password') }}" required>
 <label for="password">Password</label>
 </div>
 <div class="input-field col s12" style="margin-top:0">
-<input type="checkbox" name="remember" class="filled-in" id="filled-in-box" />
-<label for="filled-in-box">I agree to the Jobstalker Terms of Service and Privacy Policy</label>
+<input type="checkbox" name="agreement" class="filled-in" id="agreement">
+<label for="agreement">I agree to the Jobstalker Terms of Service and Privacy Policy</label>
 </div>
 <div class="input-field col s12" style="margin-top:40px">
 <button type="submit" class="btn-block btn waves-effect waves-light blue darken-2" style="width:100%">Sign Up</button>

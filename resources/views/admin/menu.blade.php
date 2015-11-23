@@ -1,7 +1,7 @@
 <ul class="z-depth-3 side-nav" id="mobile-demo" style="padding-top:56px">
 <li><div class="sidebar_main_header"></div></li>
-<li class="bold"><a href="{{ url('admin-category') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE892;</i>Category</a></li>
-<li class="bold"><a href="{{ url('admin-user') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE851;</i>User</a></li>
+<li class="bold"><a href="{{ url('admin/category') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE892;</i>Category</a></li>
+<li class="bold"><a href="{{ url('admin/user') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE851;</i>User</a></li>
 <li class="bold"><a href="{{ url('admin') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE32A;</i>Admin</a></li>
 </ul>
 <div class="navbar-fixed" style="z-index:9999">
@@ -19,8 +19,8 @@
 <header>
 <ul class="side-nav fixed z-depth-3" style="padding-top:60px">
 <li><div class="sidebar_main_header"></div></li>
-<li class="bold"><a href="{{ url('admin-category') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE892;</i>Category</a></li>
-<li class="bold"><a href="{{ url('admin-user') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE851;</i>User</a></li>
+<li class="bold"><a href="{{ url('admin/category') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE892;</i>Category</a></li>
+<li class="bold"><a href="{{ url('admin/user') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE851;</i>User</a></li>
 <li class="bold"><a href="{{ url('admin') }}" class="waves-effect waves-blue"><i class="material-icons left icon-admin">&#xE32A;</i>Admin</a></li>
 </ul>
 </header>

@@ -20,12 +20,12 @@
 <div class="row">
 <div class="input-field col s12">
 <i class="material-icons prefix">&#xE86C;</i>
-<input id="username" type="text" name="username" class="validate">
+<input id="username" type="text" name="username" class="validate" value="{{ old('username') }}" required>
 <label for="username">Username</label>
 </div>
 <div class="input-field col s12">
 <i class="material-icons prefix">&#xE897;</i>
-<input id="password" type="password" name="password" class="validate">
+<input id="password" type="password" name="password" class="validate" value="{{ old('password') }}" required>
 <label for="password">Password</label>
 </div>
 <div class="input-field col s12">
@@ -37,6 +37,10 @@
 </div>
 </div>
 </form>
+<div style="clear:both"></div>
+@foreach($errors->all() as $error)
+<div class="card-panel white-text red">{{ $error }}</div>
+@endforeach
 </div>
 </div>
 <div class="center">
