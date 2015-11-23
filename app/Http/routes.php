@@ -25,8 +25,9 @@ Route::get('logout','Auth\AuthController@getLogout');
 
 // Here is an user route
 
+Route::get('projects','UserController@getMyProjects');
 Route::get('post/project','UserController@getPostProject');
-Route::get('post/project','UserController@getPostProject');
+Route::post('post/project','UserController@postProject');
 
 
 // Here is an admin route

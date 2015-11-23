@@ -84,9 +84,7 @@ class AuthController extends Controller
             return redirect('signup')->withErrors($validator)->withInput();
         }
 
-        else{
-          DB::table('users')->insert(['name'=>$name,'email'=>$email,'username'=>$username,'password'=>bcrypt($password),'role'=>'1','verify'=>'2','photo'=>'default.jpg']);
-          return redirect('/');
-        }
+        DB::table('users')->insert(['name'=>$name,'email'=>$email,'username'=>$username,'password'=>bcrypt($password),'role'=>'1','verify'=>'2','photo'=>'default.jpg']);
+        return redirect('/');
     }
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Jobstalker</title>
+<title>My Projects - Jobstalker</title>
 @include('user.lib')
 </head>
 <body class="grey lighten-3">
