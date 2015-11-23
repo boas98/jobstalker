@@ -22,3 +22,11 @@ Route::get('signup','Auth\AuthController@getSignUp');
 
 Route::get('dashboard','UserController@dashboard');
 Route::get('post/project','UserController@getPostProject');
+
+
+// Here is an admin route
+
+Route::get('admin-category','AdminController@category');
+Route::post('admin-category','AdminController@postCategory');
+Route::get('admin-user','AdminController@user');
+Route::get('admin','AdminController@admin');

@@ -62,6 +62,6 @@
           @include('user.sidebar')
         </div>
       </div>
-      @include('user.footer')
+      @include('footer')
 </body>
 </html>

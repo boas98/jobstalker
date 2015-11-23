@@ -136,6 +136,6 @@
         </div>
       </div>
     </div>
-    @include('user.footer')
+    @include('footer')
 </body>
 </html>
