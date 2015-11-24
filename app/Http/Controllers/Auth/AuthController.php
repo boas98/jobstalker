@@ -85,6 +85,8 @@ class AuthController extends Controller
         }
 
         DB::table('users')->insert(['name'=>$name,'email'=>$email,'username'=>$username,'password'=>bcrypt($password),'role'=>'1','verify'=>'2','photo'=>'default.jpg']);
-        return redirect('/');
+        if (Auth::attempt(['username'=>$username,'password'=>$password])) {
+            return redirect('/');
+        }
     }
 }
