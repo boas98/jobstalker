@@ -25,6 +25,7 @@ Route::get('logout','Auth\AuthController@getLogout');
 
 // Here is an user route
 
+Route::get('user/{username}/verify/{token}','MainController@verifyAccount');
 Route::get('projects','UserController@getMyProjects');
 Route::get('post/project','UserController@getPostProject');
 Route::post('post/project','UserController@postProject');

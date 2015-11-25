@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Mail;
 use Auth;
 use DB;
 use App\User;
@@ -71,6 +72,7 @@ class AuthController extends Controller
         $email = $r->input('email');
         $username = $r->input('username');
         $password = $r->input('password');
+        $token = str_random(40);
 
         $validator = Validator::make($r->all(),[
             'name'  =>  'required|max:255',
@@ -84,9 +86,17 @@ class AuthController extends Controller
             return redirect('signup')->withErrors($validator)->withInput();
         }
 
-        DB::table('users')->insert(['name'=>$name,'email'=>$email,'username'=>$username,'password'=>bcrypt($password),'role'=>'1','verify'=>'2','photo'=>'default.jpg']);
-        if (Auth::attempt(['username'=>$username,'password'=>$password])) {
-            return redirect('/');
-        }
+            DB::table('users')->insert(['name'=>$name,'email'=>$email,'username'=>$username,'password'=>bcrypt($password),'role'=>'1','verify'=>'2','photo'=>'default.jpg']);
+
+            $user = DB::table('users')->where('username',$username)->first();
+
+            DB::table('verify')->insert(['id_user'=>$user->id,'str'=>$token]);
+
+            if (Auth::attempt(['username'=>$username,'password'=>$password])) {
+                Mail::send('admin.mailing',array('token'=>$token,'username'=>$username,'name'=>$name),function($m) use ($r) {
+                    $m->to($r->input('email'),$r->input('name'))->subject('Jobstalker verifycation account');
+                });
+                return redirect('/');
+            }
     }
 }
